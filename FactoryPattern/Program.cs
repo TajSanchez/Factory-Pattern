@@ -1,10 +1,18 @@
-﻿namespace FactoryPattern
-{
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
-}
+﻿using FactoryPattern;
+
+
+
+
+Console.WriteLine("How many wheels do you have?");
+var answer = Console.ReadLine();
+
+
+var vehicle = VehicleFactory.GetVehicle(answer);
+vehicle.Drive();
+
+
+
+
+
+
+
